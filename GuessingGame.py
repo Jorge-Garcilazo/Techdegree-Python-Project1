@@ -1,10 +1,6 @@
 import random
 
 
-def resetAttempts():
-    attempts = 1
-
-
 def playAgain():
     checkPlayAgain = True
     while checkPlayAgain:
@@ -12,7 +8,6 @@ def playAgain():
         playAgain = playAgain.lower()
         if playAgain == 'yes':
             print('The highscore is {}, can you beat it?'.format(highscore))
-            resetAttempts()
             startGame()
         elif playAgain == 'no':
             print('Thanks for playing!')
